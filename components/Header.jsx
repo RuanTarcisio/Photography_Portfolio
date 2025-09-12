@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const links = [
   { name: "Home", path: "/" },
-  { name: "Sobre", path: "/about" },
-  { name: "Contato", path: "/contact" },
+  { name: "Sobre", path: "/sobre" },
+  { name: "Contato", path: "/contato" },
   { name: "Portfolio", path: "/portfolio" },
 ];
 
@@ -24,7 +24,7 @@ const Header = () => {
           className="text-3xl lg:text-4xl font-bold text-gray-800 hover:text-gray-600 transition max-w-[200px] pr-4"
         >
           <Image
-            src="/img/header/logo.svg"
+            src="/img/header/sera.png"
             alt="Logo"
             width={150}
             height={50}

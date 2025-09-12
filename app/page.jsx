@@ -17,7 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[90vh] w-full overflow-hidden">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -48,7 +48,7 @@ export default function Home() {
                   transition={{ duration: 0.8 }}
                   className="text-center text-white px-4"
                 >
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4">Capturando Momentos</h1>
+                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black/70">Capturando Momentos</h1>
                   <p className="text-xl md:text-2xl">Fotografia profissional para ocasiões especiais</p>
                 </motion.div>
               </div>
@@ -62,7 +62,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+        className="absolute bottom-40 left-1/2 transform -translate-x-1/2 z-10"
       >
         <button className="bg-white text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition-colors">
           Agende Sua Sessão
