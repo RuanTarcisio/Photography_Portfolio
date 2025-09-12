@@ -34,7 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-            <body className={`${urbanist.variable} ${marcellus.variable} antialiased`}>
+      <body className={`${urbanist.variable} ${marcellus.variable} antialiased`}>
 
         <Header />
         {children}

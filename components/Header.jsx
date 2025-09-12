@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header
       role="banner"
-      className="fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center"
+      className="fixed w-full px-[30px] lg:px-[100px] z-50 h-[100px] lg:h-[140px] flex items-center backdrop-blur-md"
     >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo */}
