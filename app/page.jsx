@@ -48,8 +48,12 @@ export default function Home() {
                   transition={{ duration: 0.8 }}
                   className="text-center text-white px-4"
                 >
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black/70">Capturando Momentos</h1>
-                  <p className="text-xl md:text-2xl">Fotografia profissional para ocasiões especiais</p>
+                  <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black/80 font-quarternary">
+                    Capturando Emoções em Cada Click
+                  </h1>
+                  <p className="text-xl md:text-2xl font-quinary text-black/70">
+                    Transformando momentos efêmeros em memórias eternas
+                  </p>
                 </motion.div>
               </div>
             </div>

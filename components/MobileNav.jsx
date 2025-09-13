@@ -20,10 +20,10 @@ const MobileNav = () => {
     <nav aria-label="Mobile Navigation">
       {/* botão abrir menu */}
       <div
-        className="text-3xl cursor-pointer"
+        className="cursor-pointer transition-transform duration-300 text-4xl text-orange-400 hover:scale-110 hover:text-orange-500 active:scale-90"
         onClick={() => setOpen(true)}
       >
-        <CgMenuRight />
+        <CgMenuRight className="drop-shadow-md" />
       </div>
 
       {/* overlay + menu */}

@@ -1,18 +1,6 @@
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { Marcellus, Urbanist } from "next/font/google";
-
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import { Marcellus, Urbanist, Bebas_Neue, Dancing_Script, Permanent_Marker } from "next/font/google";
 
 const marcellus = Marcellus({
   variable: "--font-marcellus",
@@ -22,7 +10,28 @@ const marcellus = Marcellus({
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: [
+    "100", "200", "300", "400",
+    "500", "600", "700", "800", "900",
+  ],
+  subsets: ["latin"],
+});
+
+const bebas = Bebas_Neue({
+  variable: "--font-bebas",
+  weight: ["400"], // só tem esse
+  subsets: ["latin"],
+});
+
+const dancing = Dancing_Script({
+  variable: "--font-dancing",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const permanent = Permanent_Marker({
+  variable: "--font-dancing",
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -34,8 +43,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} ${marcellus.variable} antialiased`}>
-
+      <body
+        className={`${urbanist.variable} ${marcellus.variable} ${bebas.variable} ${dancing.variable} ${permanent.variable} antialiased`}
+      >
         <Header />
         {children}
       </body>

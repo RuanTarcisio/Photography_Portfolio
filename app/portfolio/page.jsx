@@ -5,13 +5,13 @@ import React from "react";
 const Page = () => {
     return (
         <section className="section pt-[100px] lg:pt-[140px]">
-            <div className="container mx-auto relative">
+            <div className="container mx-auto relative ">
                 {/* Usando grid para dividir texto e imagens */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-12 pb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-12 pb-16 ml-1.5">
                     {/* Coluna de texto */}
-                    <div className="lg:sticky lg:top-[calc(140px+1rem)] self-start">
+                    <div className="lg:sticky lg:top-[calc(140px+1rem)] self-start pl-1">
                         <h1 className="h1">Portfolio</h1>
-                        <p className="mb-6 max-w-sm">
+                        <p className="mb-6 max-w-xl">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                             <b>Quo, voluptates tempora facilis officiis</b>, aliquam aliquid a
                             amet ad nemo.
