@@ -11,9 +11,12 @@ import { motion } from "framer-motion";
 export default function Home() {
   // Array com 8 imagens de exemplo (substitua com as URLs reais das imagens)
   const images = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-  "https://images.unsplash.com/photo-1499084732479-de2c02d45fc4",
-  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
+    "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+    "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
+    "https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3",
+    "https://images.unsplash.com/photo-1518495973542-4542c06a5843"
   ];
 
   return (
@@ -28,21 +31,21 @@ export default function Home() {
         }}
         loop={true}
         navigation={true}
-        pagination={{ 
+        pagination={{
           clickable: true,
-          dynamicBullets: true 
+          dynamicBullets: true
         }}
         modules={[EffectFade, Autoplay, Navigation, Pagination]}
         className="h-full w-full"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div 
+            <div
               className="h-full w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-blue-200/30 to-transparent flex items-center justify-center">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
@@ -60,9 +63,9 @@ export default function Home() {
           </SwiperSlide>
         ))}
       </Swiper>
-      
+
       {/* Botão de call-to-action fixo */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
