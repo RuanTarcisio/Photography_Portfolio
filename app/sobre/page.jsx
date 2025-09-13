@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
+import ScrollIndicator from '@/components/ScrollIndicator'
 
 const About = () => {
   return (
@@ -44,12 +45,13 @@ const About = () => {
                 className="w-full h-auto object-cover rounded-lg shadow-xl relative z-10"
                 priority
               />
+              <ScrollIndicator />
+
               <div className="absolute -bottom-4 -right-4 bg-accent text-primary py-2 px-4 rounded-lg shadow-lg z-20">
                 <span className="text-sm font-semibold">+8 anos de experiência</span>
               </div>
             </div>
           </motion.div>
-
           {/* Texto e conteúdo */}
           <motion.div
             initial={{ x: 50, opacity: 0 }}
@@ -98,7 +100,7 @@ const About = () => {
                 Ver Portfólio
               </Link>
               <Link
-                href="/contact"
+                href="/contato"
                 className="btn btn-outline flex-1 text-center py-3 px-6 text-lg font-semibold"
               >
                 Entrar em Contato

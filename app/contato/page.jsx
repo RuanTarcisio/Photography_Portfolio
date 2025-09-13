@@ -1,5 +1,6 @@
 "use client"
 
+import ScrollIndicator from '@/components/ScrollIndicator'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -114,6 +115,7 @@ const ContactPage = () => {
                     placeholder='Conte-me sobre seu projeto ou ideia...'
                   />
                 </div>
+                <ScrollIndicator />
 
                 <button
                   type="submit"
