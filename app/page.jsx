@@ -51,7 +51,7 @@ export default function Home() {
                   <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black/80 font-quarternary">
                     Capturando Emoções em Cada Click
                   </h1>
-                  <p className="text-xl md:text-2xl font-quinary text-black/70">
+                  <p className="text-xl md:text-2xl font-quinary text-black/70 uppercase">
                     Transformando momentos efêmeros em memórias eternas
                   </p>
                 </motion.div>
@@ -68,7 +68,10 @@ export default function Home() {
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-40 left-1/2 transform -translate-x-1/2 z-10"
       >
-        <button className="bg-white text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition-colors">
+        <button
+          className="bg-white text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition-colors"
+          onClick={console.log("clique")}
+        >
           Agende Sua Sessão
         </button>
       </motion.div>

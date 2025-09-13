@@ -3,13 +3,13 @@ import React from 'react'
 
 const page = () => {
   return (
-    <section className='section bg-lime-100'>
+    <section className='section bg-white pt-[100px] lg:pt-[140px]'>
       <div className="container mx-auto h-full">
-        <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-8 text-center lg:text-left">
           {/* bg */}
           <div className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10">bg</div>
           {/* text & form */}
-          <div className="lg:flex-1 lg:pt-32 px-4">
+          <div className="lg:flex-1 px-4">
             <h1 className="h1">Contact me</h1>
             <p className="mb-12">I would to get suggestions from you</p>
             {/* form */}
